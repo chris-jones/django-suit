@@ -180,9 +180,7 @@
     <div class="content">
       <div class="tools">
         {% block footer_links %}
-          <a href="http://djangosuit.com/support/" target="_blank" class="icon"><i class="icon-question-sign"></i>Support</a>
-          <a href="http://djangosuit.com/pricing/" target="_blank" class="icon"><i class="icon-bookmark"></i>Licence</a>
-          <a href="http://github.com/darklow/django-suit/issues" target="_blank" class="icon"><i class="icon-comment"></i>Report a bug</a>
+         
         {% endblock %}
       </div>
 
@@ -191,15 +189,7 @@
           Copyright &copy; 2013-{% now "Y" %} DjangoSuit.com<br>Developed by <a href="http://djangosuit.com" target="_blank">DjangoSuit.com</a>
         {% endblock %}
       </div>
-
-      <div class="branding">{% block footer_branding %}
-        {% with 'ADMIN_NAME'|suit_conf as admin_name %}
-          {{ admin_name }}
-          {% if admin_name == 'Django Suit' %}
-            v{{ 'VERSION'|suit_conf }}
-          {% endif %}
-        {% endwith %}
-      {% endblock %}</div>
+      
     </div>
   </div>
   {% endif %}
